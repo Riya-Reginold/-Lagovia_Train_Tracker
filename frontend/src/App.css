@@ -1,0 +1,28 @@
+#next-steps {
+  display: flex;
+  border-top: none;
+}
+
+#docs {
+  border-right: none;
+}
+
+#spacer {
+  border-top: none;
+}
+
+.ticks::before,
+.ticks::after {
+  display: none;
+}
+body {
+  margin: 0;
+  background: #0f172a;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  padding-top: 80px;
+}

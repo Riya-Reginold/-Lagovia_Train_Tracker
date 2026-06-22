@@ -1,0 +1,195 @@
+body {
+  font-family: Arial;
+  background: #0f172a;
+  color: white;
+  margin: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 40px;
+margin-bottom: 20px;
+}
+
+.trainIcon {
+  font-size: 40px;
+  color: #38bdf8; 
+  animation: floatTrain 2s ease-in-out infinite;
+}
+
+@keyframes floatTrain {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0); }
+}
+
+
+
+.searchBox {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+}
+
+button {
+  padding: 10px 15px;
+  background: #3b82f6;
+  border: none;
+  color: white;
+  border-radius: 6px;
+}
+button:hover {
+  cursor: pointer;
+}
+
+.stationCard {
+  background: #1e293b;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+.stationname{
+  color: #0e54ea;
+}
+
+table {
+  width: 100%;
+  margin-top: 10px;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+  border-bottom: 1px solid #334155;
+  text-align: left;
+}
+
+.error {
+  color: #f87171;
+}
+
+.infoBox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  background: #0f172a;
+  border: 1px solid #334155;
+  padding: 10px 12px;
+  border-radius: 8px;
+
+  margin: 10px 0 20px 0;
+  font-size: 14px;
+  color: #cbd5e1;
+}
+
+.noResults {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  background: #1e293b;
+  border: 1px solid #ef4444;
+  color: #fca5a5;
+
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+.status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+}
+
+
+.cancelled {
+  color: #f87171;
+}
+
+
+.running {
+  color: #34d399;
+}
+
+
+.status svg {
+  font-size: 16px;
+}
+.loading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.delay {
+  color: #ef4444;
+  font-weight: 600;
+}
+
+.OnTime {
+  color: #22c55e;
+  font-weight: 600;
+}
+.statusCancelled {
+  color: #ef4444;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.statusRunning {
+  color: #22c55e;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.summaryLine {
+  font-size: 13px;
+  color: #6b7280;
+  margin: 0.3rem 0 0.8rem;
+}
+
+.departureBadge {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 12px;
+  font-weight: 500;
+  background: #eef2ff;
+  color: #4338ca;
+  padding: 2px 10px;
+  border-radius: 12px;
+  vertical-align: middle;
+}
