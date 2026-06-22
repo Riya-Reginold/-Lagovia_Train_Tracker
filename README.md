@@ -29,7 +29,6 @@ A user types part of a station name (e.g. "Bru") and sees all departures schedul
 
 ---
 
-
 ## How to Install and Run Locally
 
 ### Backend (FastAPI)
@@ -133,3 +132,17 @@ Returned when stations are found (with or without departures in the next 15 minu
  ## Known limitations
  - **No station list caching** — the full station list is fetched from iRail on every request
  - **No auto-refresh** — the user must manually search again to see updated departure times.
+---
+
+##  Screenshots
+
+### Home Page
+<img src="./screenshots/Homepage.png" width="600"/>
+
+
+### Departures View
+<img src="./screenshots/departures.png" width="600"/>
+
+### Search Results - No departure in within 15 minutes
+<img src="./screenshots/no_departure.png" width="600"/>
+---
